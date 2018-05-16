@@ -19,32 +19,16 @@
 
 # Represent employee data as a class
 class Employee
+
+	attr_accessor :first_name, :last_name, :salary, :active
+	# attr_writer :first_name, :last_name, :salary, :active
+	# attr_writer :first_name, :last_name, :salary, :active
+
 	def initialize(input_first_name, input_last_name, input_salary, input_active)
 		@first_name = input_first_name
 		@last_name = input_last_name
 		@salary = input_salary
 		@active = input_active
-	end
-
-# getter methods
-	def first_name
-		@first_name
-	end
-
-	def last_name
-		@last_name
-	end
-
-	def salary
-		@salary
-	end
-
-	def active=(input_active)
-		@active = input_active
-	end
-
-	def active
-		@active
 	end
 
 	def print_info
