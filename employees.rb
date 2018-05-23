@@ -18,29 +18,30 @@
 
 
 # Represent employee data as a class
-class Employee
+module Actualize	
+	class Employee
 
-	attr_accessor :first_name, :last_name, :salary, :active
-	# attr_writer :first_name, :last_name, :salary, :active
-	# attr_writer :first_name, :last_name, :salary, :active
+		attr_accessor :first_name, :last_name, :salary, :active
+		# attr_writer :first_name, :last_name, :salary, :active
+		# attr_writer :first_name, :last_name, :salary, :active
 
-	def initialize(options_hash)
-		@first_name = options_hash[:first_name]
-		@last_name = options_hash[:last_name]
-		@salary = options_hash[:salary]
-		@active = options_hash[:active]
-	end
+		def initialize(options_hash)
+			@first_name = options_hash[:first_name]
+			@last_name = options_hash[:last_name]
+			@salary = options_hash[:salary]
+			@active = options_hash[:active]
+		end
 
-	def print_info
-		puts "#{first_name} #{last_name} makes #{salary} a year."
-	end
+		def print_info
+			puts "#{first_name} #{last_name} makes #{salary} a year."
+		end
 
-	def give_annual_raise
-		@salary = 1.05 * @salary
-		puts @salary
+		def give_annual_raise
+			@salary = 1.05 * @salary
+			puts @salary
+		end
 	end
 end
-
 
 
 
